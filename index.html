@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="login" class="auth-section">
+      <div class="login-section">
+        <h3>Welcome Back</h3>
+        <p>Login to FinTrack Pro</p>
+        <form id="login-form">
+          <input id="login-username" type="text" placeholder="Username" />
+          <input id="login-password" type="password" placeholder="Password" />
+          <button id="login-btn" type="submit">Login</button>
+        </form>
+        <p>
+          Don't have an account? <a href="#" id="to-register">Register here</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="register" class="auth-section hidden">
+      <div class="login-section">
+        <h3>Create Account</h3>
+        <p>Join FinTrack Pro</p>
+        <form id="register-form">
+          <input
+            id="register-username"
+            type="text"
+            placeholder="Choose a Username"
+          />
+          <input
+            id="register-password"
+            type="password"
+            placeholder="Password"
+          />
+          <button id="register-btn">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="to-login">Login here</a></p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

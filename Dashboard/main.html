@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="main.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logo">Finance</div>
+        <div class="prof">
+          <h2>Ashmeer</h2>
+          <button id="add">+ Add Transaction</button>
+          <button id="logout">Logout</button>
+        </div>
+      </nav>
+
+      <div class="dashboard-body">
+        <aside>
+          <ul>
+            <li class="active">Dashboard</li>
+            <li>Settings</li>
+          </ul>
+        </aside>
+
+       
+
+<div class="content-area">
+  <div class="overview-header">
+    <h2>Financial Overview</h2>
+    <p>Real-time tracking application</p>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon balance-icon"><i class="fa-solid fa-building-columns"></i></div>
+      <p class="card-title">Current Balance</p>
+      <h3 class="card-value">$0.00</h3>
+    </div>
+    <div class="card">
+      <div class="card-icon income-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+      <p class="card-title">Total Income</p>
+      <h3 class="card-value income-text">$0.00</h3>
+    </div>
+    <div class="card">
+      <div class="card-icon expense-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+      <p class="card-title">Total Expense</p>
+      <h3 class="card-value expense-text">$0.00</h3>
+    </div>
+    <div class="card">
+      <div class="card-icon trans-icon"><i class="fa-solid fa-piggy-bank"></i></div>
+      <p class="card-title">Total Transactions</p>
+      <h3 class="card-value">0</h3>
+    </div>
+  </div>
+
+  <div class="chart-section">
+    <h3>Cash Flow Analysis</h3>
+    <div class="chart-container">
+      <canvas id="cashFlowChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="main.js"></script>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: #f8f9fa; /* Soft background tint */
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.prof {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #dc3545;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: #dc3545;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+#add {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #1e40c1;
+}
+
+#add:hover {
+  background-color: #1e40c1;
+  color: white;
+}
+
+/* --- DASHBOARD WRAPPER STRUCTURE --- */
+.dashboard-body {
+  display: flex;
+  width: 100%;
+  flex-grow: 1; /* Fills remaining height below nav */
+}
+
+aside {
+  width: 18%; /* Slightly narrower for a premium dashboard feel */
+  background-color: white;
+  border-right: 1px solid #e9ecef;
+  padding: 2rem 1rem;
+}
+
+aside ul {
+  list-style: none; /* Removes bullet points */
+}
+
+aside ul li {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: 0.2s background;
+}
+
+aside ul li:hover {
+  background-color: #f1f3f5;
+}
+
+/* Style for selected panel view tab */
+aside ul li.active {
+  background-color: #e7f5ff;
+  color: #1c7ed6;
+  font-weight: 600;
+}
+
+.content-area {
+  width: 82%;
+  padding: 3rem;
+  overflow-y: auto; /* Adds clean scroll container context if content grows large */
+}
+
+/* --- Summary Cards System --- */
+.overview-header {
+  margin-bottom: 2rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 Columns equal sizing */
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Dynamic colors based on card types */
+.balance-icon {
+  background-color: #e7f5ff;
+  color: #1c7ed6;
+}
+.income-icon {
+  background-color: #ebfbee;
+  color: #2b8a3e;
+}
+.expense-icon {
+  background-color: #fff5f5;
+  color: #c92a2a;
+}
+.trans-icon {
+  background-color: #edf2ff;
+  color: #4c6ef5;
+}
+
+.card-title {
+  color: #868e96;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.income-text {
+  color: #2b8a3e;
+}
+.expense-text {
+  color: #c92a2a;
+}
+
+/* --- Chart Container Config --- */
+.chart-section {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.chart-section h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px; /* Forces specific sizing alignment */
+  width: 100%;
+}
