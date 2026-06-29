@@ -73,7 +73,7 @@ loginForm.addEventListener("submit", (e) => {
 
   if (savedUser.username === uName && savedUser.password === pWord) {
     localStorage.setItem("isLoggedIn", "true");
-    window.location.href = "dashboard/main.html";
+    window.location.href = "Dashboard/main.html";
     loginUsername.value = "";
     loginPassword.value = "";
   } else {
